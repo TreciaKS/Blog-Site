@@ -9,10 +9,15 @@ export default function Cards({image, title, description}) {
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
                 <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-gray-800">
                     <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                    <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={image} alt="blog" />
+                    <img className="lg:h-48 md:h-36 w-full object-cover object-center" 
+                    src={image} 
+                    alt="blog" 
+                    />
                     </div>
                     
-                    <h1 className="text-2xl font-semibold text-gray-700 capitalize dark:text-white">{title}</h1>
+                    <h1 className="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
+                        {title}
+                    </h1>
 
                     <p className="text-gray-500 dark:text-gray-300">
                         {description}
